@@ -1,0 +1,13 @@
+{
+  "screenId": "home",
+  "version": 1,
+  "components": [
+    {
+      "id": "search_1",
+      "type": "searchBar",
+      "props": {
+        "placeholder": "Search Cars"
+      }
+    }
+  ]
+}
