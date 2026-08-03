@@ -1,5 +1,5 @@
-import SDUIScreen from "./src/screens/SDUIScreen";
+import StaticHomeScreen from "./src/screens/StaticHomeScreen";
 
 export default function App() {
-  return <SDUIScreen />;
+  return <StaticHomeScreen />;
 }

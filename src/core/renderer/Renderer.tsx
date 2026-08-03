@@ -15,6 +15,7 @@ const Renderer: React.FC<RendererProps> = ({ components }) => {
   return (
     <View>
       {components.map((component) => {
+        console.log(component.type);
 
         const Component =
           ComponentRegistry[component.type] || UnknownComponent;
@@ -23,6 +24,7 @@ const Renderer: React.FC<RendererProps> = ({ components }) => {
           <Component
             key={component.id}
             {...component.props}
+            action={component.action}
           />
         );
       })}

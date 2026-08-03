@@ -1,0 +1,73 @@
+import React from "react";
+import { SafeAreaView, ScrollView } from "react-native";
+
+import SearchBar from "../components/SearchBar/SearchBar";
+import BannerCarousel from "../components/BannerCarousel/BannerCarousel";
+import CategoryChips from "../components/CategoryChips/CategoryChips";
+import SectionTitle from "../components/SectionTitle/SectionTitle";
+import HorizontalRail from "../components/HorizontalRail/HorizontalRail";
+import CTASection from "../components/CTASection/CTASection";
+
+const StaticHomeScreen = () => {
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView>
+        <SearchBar placeholder="Search Cars" />
+
+        <BannerCarousel
+          images={[
+            "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200",
+            "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200",
+            "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=1200",
+          ]}
+        />
+
+        <CategoryChips
+          categories={[
+            "SUV",
+            "Sedan",
+            "Hatchback",
+            "Luxury",
+            "Electric",
+          ]}
+        />
+
+        <SectionTitle title="Recommended Cars" />
+
+        <HorizontalRail
+          cars={[
+            {
+              image:
+                "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800",
+              name: "BMW X5",
+              year: "2021 • 18,000 km",
+              price: "₹39.5L",
+            },
+            {
+              image:
+                "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800",
+              name: "Mercedes C-Class",
+              year: "2022 • 11,000 km",
+              price: "₹46.8L",
+            },
+            {
+              image:
+                "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800",
+              name: "Audi A4",
+              year: "2020 • 27,000 km",
+              price: "₹31.9L",
+            },
+          ]}
+        />
+
+        <CTASection
+          title="Sell Your Car"
+          subtitle="Get Best Price"
+          buttonText="Book Free Inspection"
+        />
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
+
+export default StaticHomeScreen;
