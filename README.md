@@ -171,7 +171,19 @@ The current schema is defined in src/schemas/home.json. A representative example
 
 ## Screenshots
 
-Screenshots are not yet included in the repository. This section is reserved for future UI captures of the home screen and the schema-driven rendering flow.
+The following screenshots document the application UI:
+
+### Home Screen
+![Home Screen](assets/screenshots/home-screen.png)
+
+### Search Bar
+![Search Bar](assets/screenshots/search-bar.png)
+
+### Recommended Cars
+![Recommended Cars](assets/screenshots/recommended-cars.png)
+
+### CTA Section
+![CTA Section](assets/screenshots/cta-section.png)
 
 ## Future Improvements
 
