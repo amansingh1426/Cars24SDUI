@@ -15,8 +15,6 @@ const Renderer: React.FC<RendererProps> = ({ components }) => {
   return (
     <View>
       {components.map((component) => {
-        console.log(component.type);
-
         const Component =
           ComponentRegistry[component.type] || UnknownComponent;
 

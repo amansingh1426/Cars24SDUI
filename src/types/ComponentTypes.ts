@@ -1,5 +1,3 @@
-// Types of components supported by our SDUI engine
-
 export enum ComponentType {
   SEARCH_BAR = "searchBar",
   BANNER_CAROUSEL = "bannerCarousel",

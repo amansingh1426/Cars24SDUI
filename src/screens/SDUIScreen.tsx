@@ -1,16 +1,23 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, ScrollView } from "react-native";
 
 import Renderer from "../core/renderer/Renderer";
 import home from "../schemas/home.json";
 import { ScreenSchema } from "../types/ComponentModel";
+import { ComponentType } from "../types/ComponentTypes";
 
 const SDUIScreen = () => {
-  const schema = home as ScreenSchema;
+  const homeSchema = home as ScreenSchema;
+  const components = homeSchema.components.map((component) => ({
+    ...component,
+    type: component.type as ComponentType,
+  }));
 
   return (
-    <SafeAreaView>
-      <Renderer components={schema.components} />
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView>
+        <Renderer components={components} />
+      </ScrollView>
     </SafeAreaView>
   );
 };
