@@ -2,10 +2,14 @@ import React from "react";
 import { ScrollView, Image, StyleSheet } from "react-native";
 
 interface Props {
-  images: string[];
+  images?: string[];
+  action?: {
+    type: string;
+    payload?: Record<string, any>;
+  };
 }
 
-const BannerCarousel = ({ images }: Props) => {
+const BannerCarousel = ({ images = [] }: Props) => {
   return (
     <ScrollView
       horizontal

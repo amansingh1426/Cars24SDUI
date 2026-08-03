@@ -10,10 +10,14 @@ interface Car {
 }
 
 interface Props {
-  cars: Car[];
+  cars?: Car[];
+  action?: {
+    type: string;
+    payload?: Record<string, any>;
+  };
 }
 
-const HorizontalRail = ({ cars }: Props) => {
+const HorizontalRail = ({ cars = [] }: Props) => {
   return (
     <ScrollView
       horizontal

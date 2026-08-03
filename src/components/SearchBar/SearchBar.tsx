@@ -2,7 +2,11 @@ import React from "react";
 import { View, TextInput, StyleSheet } from "react-native";
 
 interface SearchBarProps {
-  placeholder: string;
+  placeholder?: string;
+  action?: {
+    type: string;
+    payload?: Record<string, any>;
+  };
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ placeholder }) => {

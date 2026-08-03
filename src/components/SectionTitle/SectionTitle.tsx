@@ -2,7 +2,11 @@ import React from "react";
 import { Text, StyleSheet } from "react-native";
 
 interface Props {
-  title: string;
+  title?: string;
+  action?: {
+    type: string;
+    payload?: Record<string, any>;
+  };
 }
 
 const SectionTitle = ({ title }: Props) => {

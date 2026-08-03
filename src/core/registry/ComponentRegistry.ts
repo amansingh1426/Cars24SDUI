@@ -1,3 +1,5 @@
+import React from "react";
+
 import SearchBar from "../../components/SearchBar/SearchBar";
 import UnknownComponent from "../../components/UnknownComponent/UnknownComponent";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
@@ -10,7 +12,7 @@ import CarCard from "../../components/CarCard/CarCard";
 import { ComponentType } from "../../types/ComponentTypes";
 import Footer from "../../components/Footer/Footer";
 
-export const ComponentRegistry = {
+export const ComponentRegistry: Record<string, React.ComponentType<any>> = {
   [ComponentType.SEARCH_BAR]: SearchBar,
 
   [ComponentType.UNKNOWN]: UnknownComponent,

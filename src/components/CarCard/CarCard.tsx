@@ -2,10 +2,14 @@ import React from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
 
 interface Props {
-  image: string;
-  name: string;
-  price: string;
-  year: string;
+  image?: string;
+  name?: string;
+  price?: string;
+  year?: string;
+  action?: {
+    type: string;
+    payload?: Record<string, any>;
+  };
 }
 
 const CarCard = ({ image, name, price, year }: Props) => {

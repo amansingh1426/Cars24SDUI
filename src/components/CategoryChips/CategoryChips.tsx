@@ -2,10 +2,14 @@ import React from "react";
 import { ScrollView, Pressable, Text, StyleSheet } from "react-native";
 
 interface Props {
-  categories: string[];
+  categories?: string[];
+  action?: {
+    type: string;
+    payload?: Record<string, any>;
+  };
 }
 
-const CategoryChips = ({ categories }: Props) => {
+const CategoryChips = ({ categories = [] }: Props) => {
   return (
     <ScrollView
       horizontal
