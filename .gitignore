@@ -39,3 +39,9 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# AI tooling metadata
+.claude/
+.idea/
+.vscode/
+*.code-workspace
