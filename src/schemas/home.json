@@ -1,13 +1,36 @@
 {
   "screenId": "home",
+
   "version": 1,
+
   "components": [
+
     {
-      "id": "search_1",
-      "type": "searchBar",
-      "props": {
-        "placeholder": "Search Cars"
+      "id":"search",
+
+      "type":"searchBar",
+
+      "props":{
+
+        "placeholder":"Search Cars"
+
       }
+
+    },
+
+    {
+
+      "id":"recommended",
+
+      "type":"sectionTitle",
+
+      "props":{
+
+        "title":"Recommended Cars"
+
+      }
+
     }
+
   ]
 }

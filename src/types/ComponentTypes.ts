@@ -8,5 +8,6 @@ export enum ComponentType {
   CAR_CARD = "carCard",
   CTA_SECTION = "ctaSection",
   FOOTER = "footer",
-  UNKNOWN = "unknown"
+  UNKNOWN = "unknown",
+  SECTION_TITLE="sectionTitle"
 }
