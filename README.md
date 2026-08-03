@@ -174,16 +174,16 @@ The current schema is defined in src/schemas/home.json. A representative example
 The following screenshots document the application UI:
 
 ### Home Screen
-![Home Screen](assets/screenshots/home-screen.png)
+<img src="assets/screenshots/home-screen.png" alt="Home Screen" width="400" />
 
 ### Search Bar
-![Search Bar](assets/screenshots/search-bar.png)
+<img src="assets/screenshots/search-bar.png" alt="Search Bar" width="400" />
 
 ### Recommended Cars
-![Recommended Cars](assets/screenshots/recommended-cars.png)
+<img src="assets/screenshots/recommended-cars.png" alt="Recommended Cars" width="400" />
 
 ### CTA Section
-![CTA Section](assets/screenshots/cta-section.png)
+<img src="assets/screenshots/cta-section.png" alt="CTA Section" width="400" />
 
 ## Future Improvements
 
